@@ -1,0 +1,20 @@
+{
+  "registered_model": "churn-predictor",
+  "registered_version": 2,
+  "alias": "champion",
+  "model_type": "XGBoost",
+  "validation_status": "approved",
+  "decision_threshold": 0.5,
+  "metrics": {
+    "accuracy": 0.7502,
+    "precision": 0.5193,
+    "recall": 0.7914,
+    "f1_score": 0.6271,
+    "roc_auc": 0.8469
+  },
+  "confusion_matrix": [
+    [761, 274],
+    [78, 296]
+  ]
+}
+

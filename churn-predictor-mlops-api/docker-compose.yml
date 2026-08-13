@@ -1,0 +1,11 @@
+services:
+  churn-api:
+    build: .
+    container_name: churn-predictor-api
+    ports:
+      - "8000:8000"
+    environment:
+      MODEL_PATH: /app/models/churn_model.joblib
+      DECISION_THRESHOLD: "0.5"
+    restart: unless-stopped
+
